@@ -7,5 +7,5 @@ export const errorHandler = (
   next: NextFunction
 ) => {
   console.error(err.stack);
-  res.status(500).json({ error: 'Algo salió mal en el servidor.' });
+  res.status(500).json({ error: err.message});
 };

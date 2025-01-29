@@ -18,9 +18,9 @@ model User {
   name                String
   email               String    @unique
   identificationNumber String    @unique
-  referredById        String?
-  referredBy          User?     @relation("Referrals", fields: [referredById], references: [id])
-  referrals           User[]    @relation("Referrals")
+  referralEmail       String?
+  referredBy            User?     @relation(name: "UserReferredBy", fields: [referralEmail], references: [email]) 
+  referredUsers           User[]    @relation(name: "UserReferredBy") 
   createdAt           DateTime  @default(now())
   updatedAt           DateTime  @updatedAt
 }
