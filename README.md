@@ -14,6 +14,13 @@ El servidor corre en el puerto 7070
 npm run dev
 ```
 
+**Env vars:**
+Para correr la aplicacion es necesario crear una variable de ambiente que contiene la conexion de la BD
+
+```
+DATABASE_URL="postgresql://usuario:clave@localhost:5432/mangobank?schema=public"
+```
+
 **Tecnologias:**
 
 1. Node.js
