@@ -134,6 +134,6 @@ export class UserService {
       },
     });
 
-    return;
+    return 'usuario eliminado'
   }
 }

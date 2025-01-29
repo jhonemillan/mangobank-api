@@ -5,6 +5,7 @@
   "scripts": {
     "start": "node dist/server.js",
     "build": "tsc",
+    "test": "jest",
     "dev": "ts-node src/server.ts",
     "migrate": "npx prisma migrate dev --name init",
     "generate": "npx prisma generate"
@@ -23,6 +24,8 @@
     "swagger-ui-express": "^5.0.1"
   },
   "devDependencies": {
+    "@faker-js/faker": "^9.4.0",
+    "@jest/globals": "^29.7.0",
     "@types/express": "^5.0.0",
     "@types/jest": "^29.5.14",
     "@types/node": "^22.12.0",
