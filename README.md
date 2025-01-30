@@ -21,6 +21,27 @@ Para correr la aplicacion es necesario crear una variable de ambiente que contie
 DATABASE_URL="postgresql://usuario:clave@localhost:5432/mangobank?schema=public"
 ```
 
+**Project structure**
+```
+└── 📁src
+    └── 📁controllers
+        └── userController.ts
+    └── 📁models
+        └── userModel.ts
+    └── 📁repositories
+        └── userRepository.ts
+    └── 📁routes
+        └── userRoutes.ts
+    └── 📁services
+        └── userService.ts
+    └── 📁utils
+        └── errorHandler.ts
+        └── validation.ts
+    └── app.ts
+    └── server.ts
+```
+
+
 **Tecnologias:**
 
 1. Node.js
